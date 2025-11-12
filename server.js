@@ -54,7 +54,7 @@ const posts = [
 //routes 
 
 app.get('/', (req, res) => {
-    res.send('<h1>Ciambellone</h1><img src:"/imgs/ciambellone.jpeg" alt= "welcome to the panetteria">')
+    res.send('<h1>Ciambellone</h1><img src="/imgs/ciambellone.jpeg" alt= "welcome to the panetteria">')
 })
 
 
