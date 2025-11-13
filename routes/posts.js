@@ -40,8 +40,10 @@ const posts = [
 ]
 
 
-
-//routes 
+/* CRUD OPERATIONS ON ENTITY POSTS
+- sostituisco app.get con router.get
+-elimino la parte di URI /API/POSTS,perchè andrà utilizzata solo nel file server.js, altrimenti verrà identificata come una ripetizione)
+*/
 
 router.get('/', (req, res) => {
     res.send('<h1>Ciambellone</h1><img src="http://localhost:3002/imgs/ciambellone.jpeg" alt= "welcome to the panetteria">')
@@ -53,7 +55,7 @@ router.get('/', (req, res) => {
 
 router.get('/', (req, res) => {
 
-    res.json('Lista dei posts')
+    res.json(posts)
 })
 
 //SHOW

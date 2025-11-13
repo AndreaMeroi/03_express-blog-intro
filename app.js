@@ -15,5 +15,5 @@ app.listen(port, () => {
 
 // Routes Group 
 
-app.use('./routes/posts.js', postsRouter)
+app.use('/api/posts', postsRouter)
 
