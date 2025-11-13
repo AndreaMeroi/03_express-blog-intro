@@ -43,7 +43,7 @@ const posts = [
 
 //routes 
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send('<h1>Ciambellone</h1><img src="http://localhost:3002/imgs/ciambellone.jpeg" alt= "welcome to the panetteria">')
 })
 
@@ -51,37 +51,37 @@ app.get('/', (req, res) => {
 
 //INDEX
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
 
     res.json('Lista dei posts')
 })
 
 //SHOW
 
-app.get('/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     res.send('Visulaizza il post con ID:' + req.params.id)
 })
 
 //STORE
 
-app.post('/', (req, res) => {
+router.post('/', (req, res) => {
     res.send('Aggiungi nuovo post')
 })
 //UPDATE
 
-app.put('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     res.send('modifica completamente il post con ID:' + req.params.id)
 })
 
 //MODIFY
 
-app.patch('/:id', (req, res) => {
+router.patch('/:id', (req, res) => {
     res.send('modifica parzialmente il post con ID:' + req.params.id)
 })
 
 //DESTROY
 
-app.delete('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     res.send('cancella il post con ID:' + req.params.id)
 
 })
