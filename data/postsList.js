@@ -18,13 +18,13 @@ const posts = [
         titolo: 'pane_fritto_dolce',
         contenuto: 'la ricetta del pane_fritto_dolce',
         img: 'imgs/pane_fritto_dolce.jpeg',
-        tags: ['pane_fritto_dolce', "torta", "dolce", "zucchero"]
+        tags: ['pane_fritto_dolce', "torta", "dolce", "zucchero", "pane"]
     }, {
         ID: 4,
         titolo: 'pasta_barbabietola',
         contenuto: 'la ricetta del pasta_barbabietola',
         img: 'imgs/pasta_barbabietola.jpeg',
-        tags: ['pasta_barbabietola', "torta", "dolce", "zucchero"]
+        tags: ['pasta_barbabietola', "torta", "dolce", "zucchero", "pane"]
     }, {
         ID: 5,
         titolo: 'torta_paesana',
