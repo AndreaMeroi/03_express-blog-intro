@@ -4,7 +4,21 @@ const posts = require('../data/postsList')
 
 // index
 const index = (req, res) => {
-    res.json(posts)
+
+    // res.send ('show a filtered list of pizzas')
+    console.log(req.query.tag);
+
+    // variabile filtered_posts che se non ci sono filtri attivi è uguale a posts stesso (uso let perchè dovrà poter essere modificata)
+    let filtered_posts = posts
+
+    if (req.query.tag) {
+        filtered_posts = posts.filter(post => post.tags.includes(req.query.tag))
+    }
+
+    console.log(filtered_posts);
+
+    res.json(filtered_posts)
+
 }
 // show
 const show = (req, res) => {
